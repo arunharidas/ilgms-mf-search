@@ -8,16 +8,25 @@
 	}
 	function save()
 	{
-		console.log("Save button clicked");
-		localStorage.setItem("sessiongpname", document.getElementById("gpname").value)
-		console.log(localStorage.getItem("sessiongpname"))
+		if(document.getElementById("gpname").value=="" || document.getElementById("postoffice").value=="" || document.getElementById("district").value=="" || document.getElementById("pincode").value=="" || document.getElementById("email").value=="" || document.getElementById("phone").value=="" )
+		{
+			window.alert("Enter all values");
+
+		}
+		else
+		{
+			console.log("Save button clicked");
+			localStorage.setItem("sessiongpname", document.getElementById("gpname").value)
+			console.log(localStorage.getItem("sessiongpname"))
+			window.alert("Data Saved");
+			window.location.href = "../drafttemplates.html";
+		}
 
 
 
 
 
-		 window.alert("Data Saved");
-		window.location.href = "../drafttemplates.html";
+
 	}
 </script>
 
