@@ -1,0 +1,95 @@
+<html>
+<head>
+<script>
+	console.log("started");
+	if (localStorage.getItem("sessiongpname")==null)
+	{
+		console.log("No value");
+	}
+	function test()
+	{
+		console.log("Save button clicked");
+		localStorage.setItem("sessiongpname", document.getElementById("gpname").value)
+		console.log(localStorage.getItem("sessiongpname"))
+	}
+</script>
+
+</head>
+<body>
+<img src="../images/header.jpg" width="100%">
+<a href="../index.html"><h3> ⬅ Go back to Home Page</h3></a>
+<center>
+	<h2><u> Basic Details</u> </h2>
+	<table width="80%">
+		<tr>
+			<td width="50%">
+				Panchayat Name
+			</td>
+			<td>
+				<input type=text id="gpname">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				Post Office
+			</td>
+			<td>
+				<input type=text id="postoffice">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				District
+			</td>
+			<td>
+				<input type=text id="district">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				Pincode
+			</td>
+			<td>
+				<input type=text id="pincode">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				Email
+			</td>
+			<td>
+				<input type=text id="email">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				Phone Number
+			</td>
+			<td>
+				<input type=text id="phone">
+			</td>
+		</tr>
+		<tr>
+			<td width="50%">
+				ISO Certified
+			</td>
+			<td>
+				<input type="checkbox" value="iso" id="iso" > ISO Certified </input>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type ="image" src="../images/buttonsave.png" onclick="test()">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<a href="../index.html"> <input type ="image" src="../images/buttoncancel.png"> </a>
+			</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <main> Checking for already saved gp profile </main>
+    <script>
+      if (localStorage.getItem("sessiongpname")==null)
+      {
+          window.location.href = "setgp.html";
+      }
+      else
+      {
+        window.location.href = "../drafttemplates.html";
+      }
+    </script>
+    <footer></footer>
+  </body>
+</html>
