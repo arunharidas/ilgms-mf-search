@@ -17,9 +17,14 @@
 		{
 			console.log("Save button clicked");
 			localStorage.setItem("gpname", document.getElementById("gpname").value)
-			console.log(localStorage.getItem("sessiongpname"))
+			localStorage.setItem("gppostoffice", document.getElementById("gppostoffice").value)
+			localStorage.setItem("gpdistrict", document.getElementById("gpdistrict").value)
+			localStorage.setItem("gppincode", document.getElementById("gppincode").value)
+			localStorage.setItem("gpemail", document.getElementById("gpemail").value)
+			localStorage.setItem("gpphone", document.getElementById("gpphone").value)
+
 			window.alert("Data Saved");
-			window.location.href = "../drafttemplates.html";
+			window.location.href = "../drafts/dirhom.html";
 		}
 
 
@@ -33,7 +38,7 @@
 </head>
 <body>
 <img src="../images/header.jpg" width="100%">
-<a href="../drafttemplates.html"><h3> ⬅ Go back to Draft Templates</h3></a>
+<a href="../drafts/dirhome.html"><h3> ⬅ Go back to Draft Templates</h3></a>
 <center>
 	<h2><u> Basic Details</u> </h2>
 	<table width="80%">
