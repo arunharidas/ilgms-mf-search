@@ -9,6 +9,8 @@
 	function save()
 	{
 		console.log("Save button clicked");
+		sessionStorage.setItem("no", document.getElementById("no").value);
+		sessionStorage.setItem("date", document.getElementById("date").value);
 		sessionStorage.setItem("name", document.getElementById("name").value);
 		sessionStorage.setItem("address", document.getElementById("address").value);
 		sessionStorage.setItem("phone", document.getElementById("phone").value);
@@ -203,6 +205,8 @@
 			<td>
 				<p> </p>
 				<input type ="image" src="../images/buttongetdraft.png" onclick="save()">
+				<br/>
+				<small>ലഭ്യമായ വിവരങ്ങൾ രേഖപ്പെടുത്തി എന്ന് ഉറപ്പ് വരുത്തുക, കൂടുതൽ വിവരങ്ങൾ കോപ്പി-പേസ്റ്റ് ചെയ്തതതിന് ശേഷം ഡ്രാഫ്റ്റ് ടെംപ്ലേറ്റ്സിലും തിരുത്താവുന്നതാണ് </small>
 			</td>
 		</tr>
 
