@@ -8,7 +8,11 @@
 
   alert("ഇനി ലഭ്യമാകുന്ന റിപ്പോർട്ട് CTRL+A ഉപയോഗിച്ച് സെലക്ട് ചെയ്യുക ശേഷം CTRV+C ചയ്ത് കോപ്പി ചെയ്ത് ആയത് ILGMS ടെംപ്ലേറ്റിൽ CTRL+V ഉപയോഗിച്ച് പേസ്റ്റ് ചെയ്ത് ആവശ്യമായ തിരുത്തലുകൾ വരുത്തി ഉപയോഗിക്കുക ");
 </script>
-
+  <style>
+    td{
+      font-size: 12px; font-family: sans-serif;
+    }
+  </style>
 
   </head>
   <body>
@@ -21,18 +25,20 @@
               <td align="left">
                 ലൈസൻസ് നമ്പർ :<script> document.write(sessionStorage.getItem("no")) </script>
               </td>
-              <td align="right">
+              <td align="right" >
                 തീയതി : <script> document.write(sessionStorage.getItem("date")) </script>
               </td>
             </tr>
             <tr>
               <td align="center" colspan=2>
-                <script>document.write(localStorage.getItem("gpname"));</script> ഗ്രാമപഞ്ചായത്തിൽ നിന്നും <br/> 1998 ലെ കേരള പഞ്ചായത്ത് രാജ് (പന്നികൾക്കും പട്ടികൾക്കും ലൈസൻസ് നൽകൽ) <br/> ചട്ടങ്ങൾ അനുസരിച്ച് നൽകുന്ന
+                 <script>document.write(localStorage.getItem("gpname"));</script> ഗ്രാമപഞ്ചായത്തിൽ നിന്നും <br/> 1998 ലെ കേരള പഞ്ചായത്ത് രാജ് (പന്നികൾക്കും പട്ടികൾക്കും ലൈസൻസ് നൽകൽ) <br/> ചട്ടങ്ങൾ അനുസരിച്ച് നൽകുന്ന
+
                 <br/>
                 <h3> പന്നികളെയും പട്ടികളെയും വളർത്തുന്നതിനുള്ള/സൂക്ഷിക്കുന്നതിനുള്ള ലൈസൻസ് </h3>
               </td>
             </tr>
           </table>
+
           <table width="100%" border=1>
             <tr>
               <td valign="top" align="center">
@@ -53,7 +59,7 @@
               <td valign="top" align="center">
                 2
               </td>
-              <td valign="top" width="35%">
+              <td valign="top" width="35%" align="left">
                 ലൈസൻസ് ലഭിച്ച മൃഗത്തെ സംബന്ധിച്ച വിവരങ്ങൾ
               </td>
               <td valign="top" width=60%>
